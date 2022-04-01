@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{text-align: center;}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body style="background-image:url('https://in.pinterest.com/pin/593208582159276413/');">
+
+    <h1>Welcome to ISE Department Club!!</h1>
+    <p> Teachers exclusive Club</p>
+    
+    <div class="'HOME">
+        <a class="EVENT" href="#home">HOME </a>
+        <a href="ABOUT US" href="#event">EVENT</a>
+        <a href="LOGIN" href="#aboutus">ABOUT US</a>
+        <a href="CONTACT US" href="#login">LOGIN</a>
+
+    </div>
+    <h2> add your details to register</h2>
+    <div class=""reg">
+    <form action=""></div>
+        <label for="name"><strong>Name:</strong>
+            <input type=""text" name="name" placeholder="Enter your name">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for=""
+    </div>
+      
+  
+</body>
+</html>
