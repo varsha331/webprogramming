@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr1 = [];
+        var arr2=[]
+        var n = prompt("Enter the size of array1: ");
+        var m = prompt("Enter the size of array2: ");
+        var i;
+        var status=1;
+        for (i = 0; i < n; i++) {
+            arr1[i] = prompt("Enter the array element " + (i + 1));
+        }
+        for (i = 0; i < m; i++) {
+            arr2[i] = prompt("Enter the array element " + (i + 1));
+        }
+        if(m!=n)
+        {
+            document.write("Size of array not equal so not identical");
+        }
+        else{
+            for(i=0;i<n;i++)
+            {
+                if(arr1[i]!=arr2[i])
+                {
+                    status=0;
+                    break;
+                }
+            }
+            if(status==1)
+            {
+                document.write("Two array are identical");
+            }
+            else{
+                document.write("Two array are not identical");
+            }
+        }
+    </script>
+</body>
+
+</html>
