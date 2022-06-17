@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function process_name(s)
+        {
+            var i=0;
+            var str=s.split(" ");
+            var n;
+            var len=str.length;
+            while(i<(len-1))
+            {
+            n=str[i].split("");
+            document.write(n[0]+". ");
+            i=i+1;
+            }
+            document.write(str[len-1]);
+        }
+
+        var str=prompt("Enter the name");
+        // document.write(str);
+        process_name(str);
+    </script>
+</body>
+</html>
