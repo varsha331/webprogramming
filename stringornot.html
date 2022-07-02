@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //capitalize ,insert a string,check whether string or not,split a string and convert into array of words.
+        let fun1=()=>{
+
+let str=prompt("enter the string");
+
+if(str[0]>='a'&&str[0]<='z')
+{
+    let first=str.charCodeAt(str[0])-97;
+    alert("string after capitalizing: "+ String.fromCharCode(first+65)+str.slice(1));  
+}
+else
+{
+    alert(str)
+}
+};
+
+let fun2=()=>{
+
+let str2=prompt("enter the string");
+
+alert("after inserting the string in str2 :"+str2.slice(0,2)+"ki"+str2.slice(2));
+
+};
+
+let fun3=()=>{
+let str3=prompt("enter the string");
+
+for(let i=0;i<str3.length;i++)
+if(!(str3[i]>='A'&&str3[i]<='Z')&& !(str3[i]>='a'&&str3[i]<='z'))
+{
+    alert("not a  string");
+}
+else{
+    alert("it is a string");
+}
+};
+
+let fun4=()=>{
+
+let str4=prompt("enter the string");
+
+let arry=str4.split('');
+
+alert(arry);
+
+};
+
+fun1();
+fun2();
+fun3();
+fun4();
+
+    </script>
+</body>
+</html>

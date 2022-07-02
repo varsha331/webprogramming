@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //jump search.
+        let jump=(arr,x,n)=>{
+
+let step=Math.sqrt(n);
+let prev=0
+while(arr[Math.min(step,n)-1]<x)
+{
+    prev=step;
+
+    step+=Math.sqrt(n);
+
+    if(prev>=n)
+    {
+        return -1;
+    }
+}
+while(arr[prev]<x)
+{
+    prev++;
+
+    if(prev==Math.min(step,n))
+    {
+        return -1;
+    }
+}
+if(arr[prev]==x)
+{
+   return prev;
+}
+return -1;
+}
+
+let arr=[3,6,8,10,9,15,44,89,90]
+let x=89;
+let index=jump(arr,x,arr.length);
+
+console.log(`number ${x} found at index ${index}`);
+    </script>
+</body>
+</html>
