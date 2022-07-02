@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //book hotel only after booking flight.
+        function bookflight(str){
+            return new Promise((resolve,reject)=>{
+                let pattern=/bookflight/;
+                let res=str.match(pattern);
+                if(res)
+                resolve("flight booked");
+                else
+                reject("not booked")
+            })
+        }
+        function bookhotel(str1){
+            return new Promise((resolve,reject)=>{
+                let pattern1=/bookhotel/;
+                let res1=str1.match(pattern1);
+                if(res1)
+                resolve("hotel booked");
+                else
+                reject("not booked")
+            })
+        }
+        let string=prompt("enter bookflight if you want to book flight");
+        bookflight(string).then(function(v){alert(v)
+        let string1=prompt("enter bookhotel if you want to book hotel");
+        bookhotel(string1).then(function(v1){alert(v1)}).catch(function(error){alert(error)})
+        
+        }).catch(function(error){alert(error)});
+    </script>
+</body>
+</html>
